@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title><Title></Title></title>
+</head>
+<body>
+<h1>Продукты</h1>
+{% for i in products %}
+<h4>{{ i.title }}</h4>
+<a href="/product/{{ i.id }}"><img width="100" src="{{ i.image.url }}" alt=""><a>
+<p>{{ i.price }}</p>
+
+{% endfor %} 
+</body>
+</html>
